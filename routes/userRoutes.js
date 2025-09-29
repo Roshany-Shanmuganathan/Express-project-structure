@@ -1,19 +1,19 @@
 import express from "express";
 const router = express.Router();
 
-router.get("/users", (req, res) => {
+router.get("/", (req, res) => {
   res.send("This is GET Users...");
 });
-router.get("/users/:id", (req, res) => {
+router.get("/:id", (req, res) => {
   res.send("This is GET one User...");
 });
-router.post("/users", (req, res) => {
+router.post("/", (req, res) => {
   res.send("This is Create Users...");
 });
-router.put("/users/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   res.send("This is Update User...");
 });
-router.delete("/users/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
   res.send("This is Delete User...");
 });
 
